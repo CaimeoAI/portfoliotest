@@ -1,0 +1,99 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+[class*="col-"]
+{
+    float: left;
+    padding: 15px;
+    width: 33%;
+}
+
+html
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    text-align: center;
+    color: #ffff;
+    font-size: 1.6rem;
+    padding:15px;
+}
+
+.header
+{
+    background-color: #173dbb6b;
+    padding: 15px;
+}
+
+.menu ul
+{
+    list-style-type: none;
+}
+
+.menu li 
+{
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #17bb8f6b;
+    box-shadow: 0 3px 3px grey;
+}
+
+.menu li:hover
+{
+    background-color: #0099cc;
+}
+
+.aside
+{
+    background-color: #17bb8f6b;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0 3px 3px grey;
+}
+
+/* Mobile Version */
+[class*="col-"]
+{
+    width: 100%;
+}
+
+@media screen and (min-width: 600px)
+{
+    .col-s-3
+    {
+        width: 33%;
+    }
+    .col-s-9
+    {
+        width: 33%;
+    }
+    .col-s-12
+    {
+        width: 33%;
+    }
+}
+
+/* Desktop Version */
+@media screen and (min-width: 768px)
+{
+    .col-3
+    {
+        width: 25%;
+    }
+    .col-6
+    {
+        width: 50%;
+    }
+}
